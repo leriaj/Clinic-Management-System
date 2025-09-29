@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right, #f2f2f2, #78f15f);
+    color: black;
+}
+
+.container {
+    background-color: #75F15F;
+    padding: 2rem;
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    transition: border-color 0.3s;
+}
+
+.input-icon {
+    position: inline;
+}
+
+.input-icon i {
+    position: flex;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #757575;
+}
+
+.input-icon input {
+    padding-left: 35px !important; 
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-top: 1rem;
+}
+
+
+input:focus {
+    border-color: #78f15f;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(128, 124, 124);
+    opacity: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #78f15f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #66d14e;
+}
+
+
+.form-container {
+    width: 100%;
+    max-width: 550px;
+}
+
+form {
+    background: #3cff00;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+form input,
+form button {
+    display: block;
+    width: 90%;
+    padding: 14px;
+    margin: 12px auto;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form button {
+    background-color: #06530a;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+}
+
+form button:hover {
+    background-color: #78f15f;
+}
+
+form .error-msg {
+    color: red;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.link {
+    font-weight: bold;
+}

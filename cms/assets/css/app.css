@@ -1,0 +1,231 @@
+.c1 {
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 {
+    color: black;
+}
+
+.glow-button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #155724; 
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: consolas;
+}
+
+.glow-button:hover {
+    color: #fff; 
+    background: #78f15f;
+    box-shadow: 0 0 10px #78f15f, 0 0 40px #78f15f, 0 0 80px #78f15f;
+    transition-delay: 1s;
+}
+
+.glow-button:hover{
+	color:#fff;
+	background:#78f15f;
+	box-shadow:0 0 10px #78f15f,0 0 40px #78f15f,0 0 80px #78f15f;
+	transition-delay:1s;
+}
+.glow-button span{
+	position:absolute;
+	display:block;
+}
+.glow-button span:nth-child(1)
+{
+	top:0;
+	left: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(90deg,transparent,#78f15f);
+}
+.glow-button:hover span:nth-child(1)
+{
+	left:100%;
+	transition:1s;
+}
+.glow-button span:nth-child(3)
+{
+	bottom:0;
+	right: -100%;
+	width:100%;
+	height:2px;
+	background: linear-gradient(270deg,transparent,#78f15f);
+}
+.glow-button:hover span:nth-child(3)
+{
+	right:100%;
+	transition:1s;
+	transition-delay:0.3s;
+}
+.glow-button span:nth-child(2)
+{
+	top:-100%;
+	right: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(180deg,transparent,#78f15f);
+}
+.glow-button:hover span:nth-child(2)
+{
+	top:100%;
+	transition:1s;
+	transition-delay:0.15s;
+}
+.glow-button span:nth-child(4)
+{
+	bottom:-100%;
+	left: 0;
+	width:2px;
+	height:100%;
+	background: linear-gradient(360deg,transparent,#78f15f);
+}
+.glow-button:hover span:nth-child(4)
+{
+	bottom:100%;
+	transition:1s;
+	transition-delay:0.65s;
+}
+
+.popup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);  
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;  
+}
+
+.popup {
+    background: linear-gradient(to top, #f2f2f2, #78f15f);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    z-index: 1000;  
+}
+A
+.input-group {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.btn-next,  .btn-submit {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+.btn-back{
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 20%;
+    margin-top: 10px;
+}
+.btn-close {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.stats {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; 
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-group textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
